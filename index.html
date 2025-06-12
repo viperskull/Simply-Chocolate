@@ -657,5 +657,320 @@
     </nav>
   </div>
 </footer>
-
+ <!-- mobile menu -->
+ <div class="mobile-menu is-hidden" js-menu-container>
+  <!-- close button -->
+  <button class="menu-close-button" js-close-menu>
+    <svg class="menu-close-icon" width="28" height="28">
+      <use href="./images/icons.svg#close-icon"></use>
+    </svg>
+  </button>
+  <!-- mobile navigation -->
+  <ul class="navigation-list-mobile list">
+    <li class="navigation-item-mobile">
+      <a class="navigation-link-mobile link home-link" href="./index.html"
+        >Home</a
+      >
+    </li>
+    <li class="navigation-item-mobile">
+      <a class="navigation-link-mobile link" href="#howitsmade"
+        >How it's made?</a
+      >
+    </li>
+    <li class="navigation-item-mobile">
+      <a class="navigation-link-mobile link" href="#ourproducts"
+        >Our Products</a
+      >
+    </li>
+    <li class="navigation-item-mobile">
+      <a class="navigation-link-mobile link" href="#topsellers"
+        >Top sellers</a
+      >
+    </li>
+    <li class="navigation-item-mobile">
+      <a class="navigation-link-mobile link" href="#footer"
+        >Chocolate is loved</a
+      >
+    </li>
+  </ul>
+  <!-- social media navigation mobile -->
+  <div class="social-media-hero-mobile">
+    <a class="social-media-link link" href="">
+      <svg class="social-media-icon-hero-mobile" width="24" height="24">
+        <use href="./images/icons.svg#icon-instagram"></use>
+      </svg>
+    </a>
+    <a class="social-media-link link" href="">
+      <svg class="social-media-icon-hero-mobile" width="24" height="24">
+        <use href="./images/icons.svg#icon-twitter"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+<!-- top sellers modal -->
+<div
+class="top-sellers-modal-container is-hidden"
+id="buynow"
+data-modal-buynow
+>
+<div class="top-sellers-modal">
+  <!-- close button -->
+  <button class="top-sellers-close-button" data-buynow-close>
+    <svg class="top-sellers-close-icon" width="18" height="18">
+      <use href="./images/icons.svg#exit-icon"></use>
+    </svg>
+  </button>
+  <!-- header -->
+  <h2 class="top-sellers-modal-header">
+    <span class="part-of-top-sellers-modal-header">Buy </span>Now
+  </h2>
+  <!-- list of chocolate options -->
+  <ul class="top-sellers-chocolate-list list">
+    <li class="top-sellers-chocolate-choice">
+      <img
+        class="top-sellers-chocolate-image"
+        alt="trace-of-chocolate"
+        src="./images/smallchoco.png"
+        width="60"
+        height="70"
+      />
+      <button class="top-sellers-chocolate-item-button">100 g</button>
+    </li>
+    <li class="top-sellers-chocolate-choice">
+      <img
+        class="top-sellers-chocolate-image"
+        alt="trace-of-chocolate"
+        src="./images/mediumchoco.png"
+        width="60"
+        height="70"
+      />
+      <button class="top-sellers-chocolate-item-button">200 g</button>
+    </li>
+    <li class="top-sellers-chocolate-choice">
+      <img
+        class="top-sellers-chocolate-image"
+        alt="trace-of-chocolate"
+        src="./images/largechoco.png"
+        width="60"
+        height="70"
+      />
+      <button class="top-sellers-chocolate-item-button">300 g</button>
+    </li>
+  </ul>
+  <!-- modal form -->
+  <form class="modal-form">
+    <!-- personal information-->
+    <div class="form-input-wrapper personal-information-wrapper">
+      <!-- legend -->
+      <h3 class="form-label">Personal information:</h3>
+      <!-- name input -->
+      <label class="form-label form-label-personal" for="user-name"
+        >Name:</label
+      >
+      <input
+        class="form-input form-input-name"
+        id="user-name"
+        type="text"
+        name="user-name"
+        placeholder="Name"
+      />
+      <!-- surname input -->
+      <label class="form-label form-label-personal" for="user-surname"
+        >Surname:</label
+      >
+      <input
+        class="form-input form-input-surname"
+        id="user-surname"
+        type="text"
+        name="user-surname"
+        placeholder="Surname"
+      />
+    </div>
+    <!-- email -->
+    <div class="form-input-wrapper form-input-wrapper-column">
+      <label class="form-label" for="user-email">E-mail</label>
+      <input
+        class="form-input"
+        id="user-email"
+        type="email"
+        name="user-email"
+        placeholder="Enter your e-mail"
+      />
+    </div>
+    <!-- telephone -->
+    <div class="form-input-wrapper">
+      <label class="form-label" for="user-phone">Phone Number</label>
+      <!-- input and icon -->
+      <div class="form-icon-input-group">
+        <div class="form-icon-text-group">
+          <!-- ukraine icon -->
+          <svg class="form-ukraine-icon" width="25" height="17">
+            <use href="./images/icons.svg#ukraine-icon"></use>
+          </svg>
+          <!-- prefix -->
+          <p class="country-prefix">+ 380</p>
+        </div>
+        <!-- telephone input -->
+        <input
+          class="form-input form-input-phone"
+          id="user-phone"
+          type="tel"
+          name="user-phone"
+          placeholder="Phone number"
+        />
+      </div>
+    </div>
+    <!-- credit card -->
+    <div class="form-input-wrapper">
+      <label class="form-label" for="user-card">Card number</label>
+      <div class="form-icon-input-group form-icon-input-card-group">
+        <!-- credit card icon -->
+        <svg class="form-card-icon" width="30" height="18">
+          <use href="./images/icons.svg#credit-card-icon"></use>
+        </svg>
+        <!-- credit card input -->
+        <input
+          class="form-input"
+          id="user-card"
+          type="text"
+          name="user-card"
+          placeholder="Enter card"
+        />
+      </div>
+    </div>
+    <!-- comment -->
+    <div class="form-textarea-wrapper form-input-wrapper-column">
+      <label class="form-label" for="user-comment">Comment</label>
+      <textarea
+        class="form-comment"
+        id="user-comment"
+        name="user-comment"
+        placeholder="Enter text"
+      ></textarea>
+    </div>
+    <!-- submit button -->
+    <button class="form-submit-button">Submit</button>
+  </form>
+</div>
+</div>
+<!-- reviews modal -->
+<div class="reviews-modal-container is-hidden" data-modal-reviews>
+  <div class="reviews-modal">
+    <!-- close button -->
+    <button class="reviews-button-close" data-reviews-close>
+      <svg class="reviews-button-icon" width="20" height="20">
+        <use href="./images/icons.svg#exit-icon"></use>
+      </svg>
+    </button>
+    <!-- header -->
+    <h2 class="reviews-modal-header">
+      Leave a review about
+      <span class="part-of-review-modal-header">our chocolate</span>
+    </h2>
+    <!-- form -->
+    <form class="reviews-form">
+      <!-- name -->
+      <label class="reviews-form-label" for="reviews-user-name">Name</label>
+      <input
+        class="reviews-form-input"
+        id="reviews-user-name"
+        name="reviews-user-name"
+        type="text"
+        placeholder="Name"
+      />
+      <!-- email -->
+      <label class="reviews-form-label" for="reviews-user-email"
+        >Name</label
+      >
+      <input
+        class="reviews-form-input"
+        id="reviews-user-email"
+        name="reviews-user-email"
+        type="email"
+        placeholder="Email"
+      />
+      <!--phone  -->
+      <label class="form-label reviews-form-label" for="reviews-user-phone"
+        >Phone Number</label
+      >
+      <!-- input and icon -->
+      <div class="form-icon-input-group">
+        <div class="form-icon-text-group">
+          <!-- ukraine icon -->
+          <svg
+            class="form-ukraine-icon reviews-form-ukraine-icon"
+            width="32"
+            height="24"
+          >
+            <use href="./images/icons.svg#ukraine-icon"></use>
+          </svg>
+          <!-- prefix -->
+          <p class="country-prefix country-prefix-subscribe">+ 380</p>
+        </div>
+        <!-- telephone input -->
+        <input
+          class="form-input form-input-phone reviews-form-input reviews-form-input-phone"
+          id="reviews-user-phone"
+          type="tel"
+          name="reviews-user-phone"
+          placeholder="Phone number"
+        />
+      </div>
+      <!-- textarea -->
+      <label class="reviews-form-label" for="reviews-user-comment"
+        >Comment</label
+      >
+      <textarea
+        class="reviews-form-input reviews-form-textarea"
+        id="reviews-user-comment"
+        placeholder="Enter text"
+      ></textarea>
+      <!-- button -->
+      <button class="reviews-form-button">Send</button>
+    </form>
+  </div>
+</div>
+<!-- subscribe modal -->
+<div class="subscribe-modal-container is-hidden" data-modal-subscribe>
+  <!--hero -->
+  <div class="subscribe-modal">
+    <div class="subscribe-modal-hero">
+      <button class="subscribe-button-close" data-subscribe-close>
+        <svg class="subscribe-button-icon" width="20" height="20">
+          <use href="./images/icons.svg#exit-icon"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- header -->
+    <h2 class="subscribe-modal-header">
+      Explore our
+      <span class="part-of-subscribe-modal-header">new chocolate</span>
+    </h2>
+    <!-- form -->
+    <form class="subscribe-modal-form">
+      <!-- email -->
+      <label class="subscribe-form-label" for="subscribe-user-email"
+        >Email</label
+      >
+      <input
+        class="subscribe-form-input"
+        id="subscribe-user-email"
+        name="subscribe-user-email"
+        placeholder="Enter your email"
+      />
+      <!-- button -->
+      <button class="subscribe-form-button">Subscribe</button>
+      <button class="subscribe-form-button-mobile">Submit</button>
+    </form>
+  </div>
+</div>
+<!-- javascript -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/top-sellers.js"></script>
+<script src="./js/reviews.js"></script>
+<script src="./js/subscribe.js"></script>
+</body>
+</html>
    
