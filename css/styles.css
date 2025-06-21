@@ -94,22 +94,27 @@ body {
   
   .logo {
     text-transform: uppercase;
-    color: #4d5ae5;
+    color: #111111;
     font-size: 18px;
-    font-weight: 800;
-    line-height: 1.17;
-    font-family: var(--logo-font-family);
+    font-weight: 700;
+    line-height: 20px;
     letter-spacing: 0.03em;
+    font-style:var(--body-font-family);
   }
-  
-  .second-logo-part {
-    text-transform: uppercase;
-    color: #2e2f42;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.17;
-    font-family: var(--logo-font-family);
-    letter-spacing: 0.03em;
+
+  .logo-italic {
+    font-style:italic;
+  }
+
+  .logo::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../images/logo.svg);
+    width: 21px;
+    height: 21px;
+    margin-left: 5px;
+    position: absolute;
+    top: 50;
   }
   
   .nav-link {
